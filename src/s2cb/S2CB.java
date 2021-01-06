@@ -1217,9 +1217,9 @@ public class S2CB extends JFrame {
 	private static final String[] testdir = {"xyz","xzy","yxz","yzx","zxy","zyx"};
 	
 	
-	private static final String cmdStartFirst = "summon "+fallingBlock+" ~%OX% ~1 ~%OZ% {BlockState:{Name:oak_leaves},Time:1,Passengers:[{id:"+fallingBlock+",BlockState:{Name:redstone_block},Time:1,Passengers:[{id:"+fallingBlock+",BlockState:{Name:activator_rail},Time:1,Passengers:[%MINECARTS%]}]}]}";
+	private static final String cmdStartFirst = "summon "+fallingBlock+" ~%OX% ~1 ~1 {BlockState:{Name:activator_rail},Time:1,Passengers:[%MINECARTS%]}";
 	
-	private static final String cmdStartOther = "summon "+fallingBlock+" ~%OX% ~%OY% ~%OZ% {BlockState:{Name:sand},Time:1,Passengers:[%MINECARTS%]}";
+	private static final String cmdStartOther = "summon "+fallingBlock+" ~%OX% ~1 ~1 {BlockState:{Name:activator_rail},Time:1,Passengers:[%MINECARTS%]}";
 	
 	//private static final String psngrQuiet = "{id:command_block_minecart,Command:\"gamerule commandBlockOutput false\"}";
 	private static final String cmdQuiet = "gamerule commandBlockOutput false";
